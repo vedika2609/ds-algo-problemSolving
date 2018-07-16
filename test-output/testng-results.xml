@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-07-13T21:02:45Z" name="Default suite" finished-at="2018-07-13T21:02:46Z" duration-ms="1123">
+    <groups>
+    </groups>
+    <test started-at="2018-07-13T21:02:45Z" name="Default test" finished-at="2018-07-13T21:02:46Z" duration-ms="1123">
+      <class name="restassured.PostTest">
+        <test-method signature="testCaseInitialization(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restassured.PostTest@5b94b04d]" started-at="2018-07-14T02:32:45Z" name="testCaseInitialization" data-provider="PostData" finished-at="2018-07-14T02:32:46Z" duration-ms="1107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vedika]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gupta]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseInitialization -->
+      </class> <!-- restassured.PostTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
