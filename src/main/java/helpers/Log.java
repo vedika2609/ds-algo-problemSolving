@@ -1,11 +1,9 @@
 package helpers;
 
-import org.apache.log4j.Logger;
-
 public class Log{
 
 	// Initialize Log4j logs
-	private static Logger Log = Logger.getLogger(Log.class.getName());
+//	private static Logger Log = Logger.getLogger(Log.class.getName());
     private static String TC_Name;
 
 	//This is to print log for the beginning of the test case, as we usually run so many test cases as a test suite
@@ -45,20 +43,20 @@ public class Log{
 //		Reporter.log(message);
 	}
 
-	public static void warn(String message) {
+	private static void warn(String message) {
 		Log.warn(message);
 	}
 
-	public static void error(String message,Exception e) {
+	private static void error(String message, Exception e) {
 		Log.error(message, e);
 		e.printStackTrace();
 	}
 
-	public static void fatal(String message) {
+	private static void fatal(String message) {
 		Log.fatal(message);
 	}
 
-	public static void debug(String message) {
+	private static void debug(String message) {
 		Log.debug(message);
 	}
 

@@ -18,7 +18,7 @@ public class ReqresBaseTest {
 
     @BeforeClass
     public void setup() throws Exception {
-        InputStream ins = new FileInputStream(new File("src/test/java/restassured/meesho/config.properties"));
+        InputStream ins = new FileInputStream(new File("src/test/java/restassured/reqresinusers/config.properties"));
         props = new Properties();
         props.load(ins);
     }
