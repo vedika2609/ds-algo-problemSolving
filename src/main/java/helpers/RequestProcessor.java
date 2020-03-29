@@ -1,13 +1,11 @@
 package helpers;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 
-import restassured.PostRequestPojo;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class RequestProcessor {
 	private HashMap<String, String> headers = null;
@@ -19,13 +17,13 @@ public class RequestProcessor {
 	public void setParameters(HashMap<String, String> parameters) {this.parameters = parameters;}
 
 	public Response postRequest(LinkedHashMap<String, String>testData){
-		PostRequestPojo post = new PostRequestPojo(testData);
-		Response response = null;
+//		PostRequestPojo post = new PostRequestPojo(testData);
+		Response response;
 
 		response = RestAssured
 				.given()
 				.contentType(ContentType.JSON)
-				.body(post)
+//				.body(post)
 				.when().post("http://localhost:3000/posts")
 				.then()
 				.extract()
@@ -35,7 +33,7 @@ public class RequestProcessor {
 	}
 
 	public Response getRequest(LinkedHashMap<String, String>testData, String id){
-		Response response = null;
+		Response response;
 
 		response = RestAssured
 				.given()
