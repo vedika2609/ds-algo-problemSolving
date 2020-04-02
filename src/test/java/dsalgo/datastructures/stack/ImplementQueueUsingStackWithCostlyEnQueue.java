@@ -2,7 +2,7 @@ package dsalgo.datastructures.stack;
 
 import java.util.Stack;
 
-public class ImplementQueueUsingStackWithCostlyEnQueue {
+class ImplementQueueUsingStackWithCostlyEnQueue {
     private static Stack<Integer> stack1 = new Stack<>();
     private static Stack<Integer> stack2 = new Stack<>();
 
