@@ -1,4 +1,4 @@
-package dsalgo.algos.miscellaneous;
+package dsalgo.algos.problemsolving;
 
 class Staircase {
     public static void main(String[] args) {

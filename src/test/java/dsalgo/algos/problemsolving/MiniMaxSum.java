@@ -1,4 +1,4 @@
-package dsalgo.algos.miscellaneous;
+package dsalgo.algos.problemsolving;
 
 import java.util.Arrays;
 
