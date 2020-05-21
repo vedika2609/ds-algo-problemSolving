@@ -4,4 +4,4 @@
 target
 .settings
 test-output
-libs
+libs/

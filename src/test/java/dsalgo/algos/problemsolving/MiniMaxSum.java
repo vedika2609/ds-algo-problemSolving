@@ -2,6 +2,10 @@ package dsalgo.algos.problemsolving;
 
 import java.util.Arrays;
 
+/**
+ * Created by vedikagupta on 31/05/20
+ */
+
 class MiniMaxSum {
     public static void main(String[] args) {
         int[] arr = {769082435, 210437958, 673982045, 375809214, 380564127};
