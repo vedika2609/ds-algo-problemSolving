@@ -2,7 +2,7 @@ package dsalgo.datastructures.stack;
 
 import dsalgo.datastructures.linkedlist.singlylinkedlist.Node;
 
-public class StackLinkedListImplementation {
+class StackLinkedListImplementation {
     private Node root;
 
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class StackLinkedListImplementation {
     private int pop() {
         int popped = Integer.MIN_VALUE;
         if (root == null)
-            System.out.println("Stack underflow");
+            System.out.println("StackImplemtentationDLL underflow");
         else {
             popped = root.data;
             root = root.next;

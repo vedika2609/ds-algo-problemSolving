@@ -1,6 +1,6 @@
 package dsalgo.datastructures.stack;
 
-public class StackArrayImplementation {
+class StackArrayImplementation {
     private static final int MAX = 100;
     private int pop;
     private int[] a = new int[MAX];
@@ -11,7 +11,7 @@ public class StackArrayImplementation {
 
     public static void main(String[] args) {
         StackArrayImplementation stack = new StackArrayImplementation();
-        System.out.println("Stack is empty: " + stack.isEmpty());
+        System.out.println("StackImplemtentationDLL is empty: " + stack.isEmpty());
         stack.push(1);
         System.out.println(stack.peek() + " peek in stack");
         stack.push(2);
@@ -19,7 +19,7 @@ public class StackArrayImplementation {
         stack.push(3);
         System.out.println(stack.peek() + " peek in stack");
         System.out.println(stack.pop() + " popped from stack");
-        System.out.println("Stack is empty: " + stack.isEmpty());
+        System.out.println("StackImplemtentationDLL is empty: " + stack.isEmpty());
     }
 
     private boolean isEmpty() {
@@ -28,18 +28,18 @@ public class StackArrayImplementation {
 
     private boolean push(int x) {
         if (pop >= (MAX - 1)) {
-            System.out.println("Stack Overflow");
+            System.out.println("StackImplemtentationDLL Overflow");
             return false;
         } else {
             a[++pop] = x;
-            System.out.println("Pushed Into Stack");
+            System.out.println("Pushed Into StackImplemtentationDLL");
             return true;
         }
     }
 
     private int pop() {
         if (pop < 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("StackImplemtentationDLL Underflow");
             return 0;
         } else
             return a[pop--];
@@ -47,7 +47,7 @@ public class StackArrayImplementation {
 
     private int peek() {
         if (pop < 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("StackImplemtentationDLL Underflow");
             return 0;
         } else {
             return a[pop];

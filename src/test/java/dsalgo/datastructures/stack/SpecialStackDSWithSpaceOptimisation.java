@@ -6,7 +6,7 @@ import java.util.Stack;
  * https://www.geeksforgeeks.org/design-and-implement-special-stack-data-structure/
  */
 
-public class SpecialStackDSWithSpaceOptimisation extends Stack<Integer> {
+class SpecialStackDSWithSpaceOptimisation extends Stack<Integer> {
     private Stack<Integer> min = new Stack<>();
 
     public static void main(String[] args) {

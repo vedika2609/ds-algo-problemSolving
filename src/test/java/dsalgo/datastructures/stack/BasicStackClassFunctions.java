@@ -2,7 +2,7 @@ package dsalgo.datastructures.stack;
 
 import java.util.Stack;
 
-public class BasicStackClassFunctions {
+class BasicStackClassFunctions {
 
     // Pushing element on the top of the stack
     private static void stackPush(Stack<Integer> stack) {

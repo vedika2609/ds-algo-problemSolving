@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bus Online Suite">
+    <test name="Bus Online Tests">
+        <classes>
+            <class name="selenium.busonline.tests.PaymentAlertTest"/>
+        </classes>
+    </test>
+</suite>

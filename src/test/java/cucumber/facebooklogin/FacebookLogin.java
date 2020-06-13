@@ -3,8 +3,8 @@ package cucumber.facebooklogin;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
-import helpers.DriverInit;
 import org.openqa.selenium.By;
+import selenium.commons.DriverInit;
 
 public class FacebookLogin {
 
