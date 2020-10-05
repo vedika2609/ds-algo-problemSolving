@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class BalancedBrackets {
     public static void main(String[] args) {
-        String s = "{}))";
+        String s = "[[[]";
         if (s.length() % 2 != 0 || (s.charAt(0) == '}') || (s.charAt(0) == ')') || (s.charAt(0) == ']')) {
             System.out.println("NO");
             System.exit(0);
@@ -32,6 +32,8 @@ public class BalancedBrackets {
                 }
             }
         }
+        if (!stack.empty())
+            flag = false;
         String msg = flag ? "YES" : " NO ";
         System.out.println(msg);
     }
