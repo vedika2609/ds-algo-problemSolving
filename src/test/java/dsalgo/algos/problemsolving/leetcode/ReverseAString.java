@@ -9,13 +9,17 @@ public class ReverseAString {
         char[] s = "A man a plan a canal: Panama".toCharArray();
         int start = 0;
         int end = s.length - 1;
+        new ReverseAString().reverse(s, start, end);
+        System.out.println(s);
+    }
+
+    public void reverse(char[] c, int start, int end) {
         while (start < end) {
-            char temp = s[start];
-            s[start] = s[end];
-            s[end] = temp;
+            char temp = c[start];
+            c[start] = c[end];
+            c[end] = temp;
             start++;
             end--;
         }
-        System.out.println(s);
     }
 }

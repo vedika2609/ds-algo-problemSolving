@@ -33,5 +33,7 @@ class CalendarDay {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+        int[] num = new int[5];
+
     }
 }
