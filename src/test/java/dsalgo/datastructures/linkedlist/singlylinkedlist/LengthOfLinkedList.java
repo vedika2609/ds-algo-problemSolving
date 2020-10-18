@@ -7,6 +7,7 @@ public class LengthOfLinkedList {
     public static void main(String[] args) {
         LengthOfLinkedList linkedList = new LengthOfLinkedList();
         InsertNewNode newNode = new InsertNewNode();
+        Node node = new Node();
 
         linkedList.head = new Node(1);
         Node node1 = new Node(2);
@@ -19,7 +20,7 @@ public class LengthOfLinkedList {
         node2.next = node3;
         node3.next = node4;
 
-        newNode.printList(linkedList.head);
+        node.printList(linkedList.head);
         System.out.println();
         System.out.println(linkedList.getLength());
         System.out.println(linkedList.getCountRec());

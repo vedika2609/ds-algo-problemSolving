@@ -7,6 +7,7 @@ public class DeleteNode {
     public static void main(String[] args) {
         DeleteNode deleteNode = new DeleteNode();
         InsertNewNode insertNewNode = new InsertNewNode();
+        Node node = new Node();
 
         deleteNode.head = new Node(1);
         Node node1 = new Node(2);
@@ -18,13 +19,13 @@ public class DeleteNode {
         node2.next = node3;
 
         deleteNode.head = insertNewNode.pushNode(10, deleteNode.head);
-        insertNewNode.printList(deleteNode.head);
+        node.printList(deleteNode.head);
         System.out.println();
         deleteNode.deleteNode(2);
-        insertNewNode.printList(deleteNode.head);
+        node.printList(deleteNode.head);
         System.out.println();
         deleteNode.deleteNodeAtPosition(2);
-        insertNewNode.printList(deleteNode.head);
+        node.printList(deleteNode.head);
         deleteNode.deleteLinkedList();
         System.out.println();
         String deleteMsg = deleteNode.head == null ? "LinkedList is successfully deleted" : "Couldn't delete the linked list";
